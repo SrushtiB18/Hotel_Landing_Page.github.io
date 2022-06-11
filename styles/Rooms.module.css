@@ -1,0 +1,35 @@
+.container {
+    margin: 0px 350px;
+}
+
+.text_center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+    font-size: 30px;
+    position: relative;
+    display: block;
+    padding-bottom: 10px;
+}
+
+.text_center h2:before{
+    position: absolute;
+    content: "";
+    width: 120px;
+    height: 2px;
+    background-color: red;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media screen and (max-width:1080px) {
+    .container {
+        margin: 0px;
+        margin-bottom: 60px;
+    }
+}

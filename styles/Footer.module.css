@@ -1,0 +1,51 @@
+.container {
+    height: 250px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 18px;
+    padding: 50px;
+}
+
+.title {
+    font-size: 35px;
+    color: blueviolet;
+}
+
+.linkTitle {
+    text-decoration: underline white;
+    cursor: pointer;
+}
+
+.linkTitle:hover {
+    color: palevioletred;
+    text-decoration: underline palevioletred;
+    transition: 0.2s;
+}
+
+.cardL {
+    flex: 2;
+}
+
+.cardS {
+    flex: 1;
+}
+
+@media screen and (max-width:1080px) {
+    .container {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .title, .linkTitle {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .cardItem {
+        text-align: center;
+        margin: 10px 0;
+    }
+}
